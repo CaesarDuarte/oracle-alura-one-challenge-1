@@ -1,0 +1,31 @@
+/* @import url(); - TODO*/
+
+:root {
+    /* Cores */
+    --cor-primaria: #E5E5E5;
+    --cor-secundaria: #FFFFFF;
+
+    --cor-tom-azul-escuro-1: #609ED4;
+    --cor-tom-azul-escuro-2: #356EA9;
+    --cor-tom-azul-escuro-3: #0A3871;
+    --cor-tom-azul-escuro-4: #072B61;
+    --cor-tom-azul-escuro-5: #052051;
+
+    --cor-tom-azul-claro-1: #F3F5FC;
+    --cor-tom-azul-claro-2: #EFF1FA;
+    --cor-tom-azul-claro-3: #E9ECF8;
+    --cor-tom-azul-claro-4: #AAB2D5;
+    --cor-tom-azul-claro-5: #757FB2;
+
+    --cor-tom-cinza-1: #CED4DA;
+    --cor-tom-cinza-2: #ADB5BD;
+    --cor-tom-cinza-3: #868E96;
+    --cor-tom-cinza-4: #495057;
+    --cor-tom-cinza-5: #343A40;
+    
+}
+
+body {
+    background-color: var(--cor-primaria);
+    color: var(--cor-tom-azul-escuro-3);
+}
