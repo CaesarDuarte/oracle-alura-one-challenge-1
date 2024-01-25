@@ -1,10 +1,11 @@
-/* @import url(); - TODO*/
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 
 :root {
     /* Cores */
-    --cor-primaria: #E5E5E5;
+    --cor-fundo: #F3F5FC;
     --cor-secundaria: #FFFFFF;
 
+    /* Tons Gerais */
     --cor-tom-azul-escuro-1: #609ED4;
     --cor-tom-azul-escuro-2: #356EA9;
     --cor-tom-azul-escuro-3: #0A3871;
@@ -23,9 +24,87 @@
     --cor-tom-cinza-4: #495057;
     --cor-tom-cinza-5: #343A40;
     
+    /* Fontes */
+    --fonte-primaria: 'Inter', sans-serif;
+}
+
+::placeholder {
+    color: var(--cor-tom-azul-escuro-3);
+    opacity: 1;
+}
+*:focus {
+    outline: none;
 }
 
 body {
-    background-color: var(--cor-primaria);
+    background-color: var(--cor-fundo);
     color: var(--cor-tom-azul-escuro-3);
+}
+
+.apresentacao {
+    display: flex;
+    justify-content:space-around
+}
+.apresentacao__conteudo__input {
+    padding: 10% 10%;
+    width: 680px;
+    height: 500px;
+    color: var(--cor-tom-azul-escuro-3);
+    background-color: var(--cor-fundo);
+    border: none;
+    border-color: var(--cor-fundo);
+    resize: none;
+    font-family: var(--fonte-primaria);
+    font-size: 32px;
+}
+
+.apresentacao__conteudo__alerta__texto {
+    color: var(--cor-tom-cinza-4);
+    font-weight: 150;
+    font-size: 12PX;
+    font-family: var(--fonte-primaria);
+    
+}
+
+.apresentacao__conteudo__output {
+    box-sizing: content-box;
+    outline: none;
+    width: 300px;
+    height: 700px;
+    border-radius: 32px;
+    background-color: var(--cor-secundaria);
+    box-shadow:  0px 24px 32px rgba(0, 0, 0, 0.08);
+}
+
+.apresentacao__conteudo__alerta {
+    display: flex;
+    gap: 8px;
+}
+.div__2__conteudo {
+    display: flex;
+    gap: 24px;
+    margin-top: 12px;
+}
+
+.div__2__botao__criptografar {
+    background-color: var(--cor-tom-azul-escuro-3);
+    color: var(--cor-secundaria);
+    width: 328px;
+    font-family: var(--fonte-primaria);
+    font-size: 16px;
+    padding: 24px 24px;
+    border-radius: 24px;
+    border: none;
+}
+
+.div__2__botao__descriptografar {
+    background-color: #D8DFE8;
+    color: var(--cor-tom-azul-escuro-3);
+    width: 328px;
+    font-family: var(--fonte-primaria);
+    font-size: 16px;
+    padding: 24px 24px;
+    border-radius: 24px;
+    border-color: var(--cor-tom-azul-escuro-3);
+    border-style: solid;
 }
